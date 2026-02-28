@@ -9,8 +9,8 @@
 ### Team Name: [Name]
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: [Helna] - [AISAT]
+- Member 2: [Alna] - [AISAT]
 
 ### Hosted Project Link
 [mention your project hosted link here]
