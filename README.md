@@ -13,7 +13,7 @@
 - Member 2: [Alna] - [AISAT]
 
 ### Hosted Project Link
-[mention your project hosted link here]
+[(https://saf-her.vercel.app/)]
 
 ### Project Description
 [SafHer is an planner that helps women choose safer routes, safer stays, and travel confidently]
