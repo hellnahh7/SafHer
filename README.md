@@ -365,7 +365,7 @@ python script.py -v --format json data.json
 ### Video
 [Add your demo video link here - YouTube, Google Drive, etc.]
 
-*Explain what the video demonstrates - key features, user flow, technical highlights*
+It shows the working of our website we can see the emargency contact when we press it the call will be automated to your emargency contact. We have police and hospitals address incase something happened and press it, it will take you to nearest hospital and police station 
 
 ### Additional Demos
 [Add any extra demo materials/links - Live site, APK download, online demo, etc.]
