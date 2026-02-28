@@ -83,15 +83,17 @@ List the key features of your project:
 
 #### Screenshots (Add at least 3)
 
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1](<img width="1600" height="837" alt="image" src="https://github.com/user-attachments/assets/8fae5164-14ac-4818-a2dd-9805ba12bf32" />
+)
+It shows that the risk while on night travelling.We have from and to destination.We can switch to light and dark mode depending on the time.It also shows the map
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2](<img width="1600" height="762" alt="image" src="https://github.com/user-attachments/assets/b2104ddc-6355-47c5-9eb4-0dde1ebe89f8" />
+)
+Here it shows the crowd,lightning and incidents happening in that area.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
+![Screenshot3](<img width="1600" height="784" alt="image" src="https://github.com/user-attachments/assets/72e60fdb-eb8a-45f4-9629-4c8ba93920bd" />
+)
+Here is theday time.The risk are less compared to night.
 #### Diagrams
 
 **System Architecture:**
