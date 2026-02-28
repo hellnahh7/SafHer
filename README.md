@@ -2,11 +2,11 @@
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
 
-# [Project Name] 🎯
+# [SafHer] 🎯
 
 ## Basic Details
 
-### Team Name: [Name]
+### Team Name: [Team Ha]
 
 ### Team Members
 - Member 1: [Helna] - [AISAT]
@@ -16,13 +16,13 @@
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+[SafHer is an planner that helps women choose safer routes, safer stays, and travel confidently]
 
 ### The Problem statement
-[What problem are you solving?]
+[Women often feels threatend during travelling. Without any safety guideness or anything]
 
 ### The Solution
-[How are you solving it?]
+[SafeHer provides a safety-focused navigation platform that integrates live maps and quick route access for women commuters. It prioritizes confidence and awareness during travel, not just speed]
 
 ---
 
@@ -31,10 +31,10 @@
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
+- Languages used: [ JavaScript, Python, css]
 - Frameworks used: [e.g., React, Django, Spring Boot]
 - Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Tools used: [VS Code, Git,]
 
 **For Hardware:**
 - Main components: [List main components]
@@ -46,10 +46,10 @@
 ## Features
 
 List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+- Feature 1: [Safe Route Planner]
+- Feature 2: [ Area Safety Indicator]
+- Feature 3: [Safe Places Nearby]
+- Feature 4: [Travel Safety Tips]
 
 ---
 
@@ -400,10 +400,8 @@ If you used AI tools during development, document them here for transparency:
 
 ## Team Contributions
 
-- [Name 1]: [Specific contributions - e.g., Frontend development, API integration, etc.]
-- [Name 2]: [Specific contributions - e.g., Backend development, Database design, etc.]
-- [Name 3]: [Specific contributions - e.g., UI/UX design, Testing, Documentation, etc.]
-
+- [Alna]: [create website/app, add buttons, embed maps, connect navigation]
+- [Helna]: [design screens, decide colors, create slides, explain during judging]
 ---
 
 ## License
