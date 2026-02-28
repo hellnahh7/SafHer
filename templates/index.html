@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafHer - Smart Safety Travel Planner</title>
+    
+    <!-- Google Fonts for Modern Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Leaflet JS for Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body class="theme-day">
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo-container">
+            <h1 class="logo">Saf<span class="highlight">Her</span></h1>
+            <p class="tagline">Travel Safe. Travel Smart.</p>
+        </div>
+        <div class="toggle-container">
+            <label class="switch" for="day-night-toggle">
+                <input type="checkbox" id="day-night-toggle">
+                <span class="slider round">
+                    <span class="icon sun">☀️</span>
+                    <span class="icon moon">🌙</span>
+                </span>
+            </label>
+            <span class="toggle-label">Day Mode</span>
+        </div>
+    </header>
+
+    <div class="warning-banner" id="night-warning" style="display: none;">
+        ⚠️ Night travel detected. Applying night safety penalty to suggested routes.
+    </div>
+
+    <main class="main-container">
+
+        <!-- Left Column: Controls & Analytics -->
+        <div class="left-panel">
+            
+            <!-- Route Planner Card -->
+            <section class="card route-planner">
+                <h2>Find Safe Route</h2>
+                <form id="route-form">
+                    <div class="input-group">
+                        <label for="from-select">From Activity / Area</label>
+                        <select id="from-select" required>
+                            <option value="" disabled selected>Select Starting Location</option>
+                            <!-- Populated via JS -->
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="to-select">To Destination</label>
+                        <select id="to-select" required>
+                            <option value="" disabled selected>Select Destination</option>
+                            <!-- Populated via JS -->
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn primary-btn" id="find-route-btn">
+                        <span class="btn-text">🛡️ Analyze Safe Route</span>
+                        <div class="spinner" id="btn-spinner" style="display: none;"></div>
+                    </button>
+                </form>
+
+                <!-- Results Output -->
+                <div class="results-container" id="results" style="display: none;">
+                    <div class="score-badge" id="safety-badge">🟢 Safe</div>
+                    <div class="time-estimate">Est. Time: <span id="est-time">-- mins</span></div>
+                    <p class="recommendation" id="recommendation-text">Recommended for solo travel.</p>
+                </div>
+            </section>
+
+            <!-- Safety Insights Dashboard -->
+            <section class="card insights-dashboard">
+                <h2>Safety Insights</h2>
+                <div class="insight-cards">
+                    <div class="insight-card">
+                        <span class="insight-title">Crowd Level</span>
+                        <span class="insight-value" id="crowd-val">-</span>
+                    </div>
+                    <div class="insight-card">
+                        <span class="insight-title">Lighting</span>
+                        <span class="insight-value" id="lighting-val">-</span>
+                    </div>
+                    <div class="insight-card">
+                        <span class="insight-title">Incidents</span>
+                        <span class="insight-value" id="incident-val">-</span>
+                    </div>
+                </div>
+
+                <div class="chart-container">
+                    <canvas id="safety-chart"></canvas>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Right Column: Map & SOS -->
+        <div class="right-panel">
+            
+            <!-- Map Display -->
+            <section class="map-section card">
+                <div id="map"></div>
+            </section>
+
+            <!-- Emergency Tools -->
+            <section class="emergency-tools">
+                <button class="btn sos-btn" id="sos-btn">🚨 SOS</button>
+                <div class="emergency-links">
+                    <button class="btn secondary-btn" id="nav-police-btn">👮 Nearest Police</button>
+                    <button class="btn secondary-btn" id="nav-hospital-btn">🏥 Nearest Hospital</button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Modal for SOS Simulation -->
+    <div id="sos-modal" class="modal">
+        <div class="modal-content">
+            <h2 class="alert-text">🚨 SOS ACTIVATED 🚨</h2>
+            <p>Locating nearest emergency services and sharing live location...</p>
+            <div class="sos-loader"></div>
+            <button class="btn cancel-btn" id="cancel-sos">Cancel (3s)</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="/static/js/map.js"></script>
+    <script src="/static/js/chart.js"></script>
+    <script src="/static/js/app.js"></script>
+
+</body>
+</html>
